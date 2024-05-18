@@ -12,18 +12,12 @@
 .form-control{
     margin-bottom: 10px;
 }
-input[typer="text"]{
-    width: 100%;
-}
-.email{
-    width: 50%;
-}
-.Lname{
-    width: 40%;
+input[type="text"]{
+    width: 80%;
 }
 button[type="submit"]{
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 5px;
     color: white;
     background-color: blue;

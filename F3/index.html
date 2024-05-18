@@ -13,8 +13,8 @@
     <h1>Registration Form</h1>
     <div>
         <form action="">
-            <div class="form-control Lname">
-                <label for="Lastname">Lastname</label><br>
+            <div class="form-control">
+                <label for="Lastname">Last Name</label><br>
                 <input type="text" id="lastname" placeholder="Last Name">
             </div>
             <div class="form-control">
@@ -26,14 +26,27 @@
 
                 <input type="text" id="middlename" name="middlename" placeholder="Middle Name">
             </div>
-            <div class="form-control email">
+            <div class="form-control">
                 <label for="email">Email</label><br>
                 <input type="text" id="email" name="email" placeholder="Email">
             </div>
-            <div class="form-control contact">
+            <div class="form-control">
                 <label for="contact">Contact No</label><br>
                 <input type="text" id="contact" name="contact" placeholder="Contact">
             </div>
+            <div class="form-control address">
+                <label for="address">Address</label><br>
+                <input type="text" id="address" name="address" placeholder="Address">
+            </div>
+
+            <label for="gender">Gender:</label><br>
+
+            <select name="gender" id="Gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="non-binary">Non-binary</option>
+            </select><br>
+
             <div class="buttons">
                 <button type="submit">Register</button>
                 <button type="button">Cancel</button>
