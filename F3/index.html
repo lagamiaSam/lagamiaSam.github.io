@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="external_registration.css">
+
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="form-container">
+    <h1>Registration Form</h1>
+    <div>
+        <form action="">
+            <div class="form-control">
+                <label for="Lastname">Last Name</label><br>
+                <input type="text" id="lastname" placeholder="Last Name">
+            </div>
+            <div class="form-control">
+                <label for="firstname">First Name</label><br>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name">
+            </div>
+            <div class="form-control">
+                <label for="middlename">Middle Name</label><br>
+
+                <input type="text" id="middlename" name="middlename" placeholder="Middle Name">
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-control">
+                <label for="contact">Contact No</label><br>
+                <input type="text" id="contact" name="contact" placeholder="Contact">
+            </div>
+            <div class="form-control address">
+                <label for="address">Address</label><br>
+                <input type="text" id="address" name="address" placeholder="Address">
+            </div>
+
+            <label for="gender">Gender:</label><br>
+
+            <select name="gender" id="Gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="non-binary">Non-binary</option>
+            </select><br>
+
+            <div class="buttons">
+                <button type="submit">Register</button>
+                <button type="button">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
