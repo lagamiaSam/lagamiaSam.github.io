@@ -1,0 +1,47 @@
+/* Adjustments to Bootstrap styles */
+.container {
+    max-width: 800px; /* Limit maximum width */
+    margin: 20px auto; /* Center align and add some space around */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.friend-info {
+    text-align: center; /* Center align content */
+}
+
+.text-red {
+    color: #dc3545; /* Red color for heading */
+    font-weight: bold; /* Bold font weight */
+}
+
+.rounded-circle {
+    width: 200px; /* Adjust image size */
+    height: 200px;
+    object-fit: cover; /* Ensure image fills circle */
+    border-radius: 50%; /* Make image rounded */
+    margin: 20px auto; /* Center image */
+    border: 5px solid #dc3545; /* Red border */
+}
+
+p {
+    font-size: 16px; /* Base font size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 10px; /* Space between paragraphs */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Reduce padding */
+    }
+    .rounded-circle {
+        width: 150px; /* Adjust image size */
+        height: 150px;
+    }
+    p {
+        font-size: 14px; /* Decrease font size */
+    }
+}
