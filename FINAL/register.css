@@ -14,6 +14,10 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
+    background-image: url(go.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .content {
@@ -21,6 +25,7 @@ body {
     text-align: center;
     padding: 20px;
 }
+
 .register-grid {
     display: flex;
     flex-direction: column;
@@ -32,6 +37,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px; 
+   
 }
 
 form {
@@ -45,7 +51,7 @@ h2 {
 
 label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 8px; /* Adjusted spacing between labels and inputs */
     color: #333;
 }
 
@@ -57,6 +63,7 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    margin-bottom: 10px; /* Adjusted spacing between inputs */
 }
 
 .btn {
