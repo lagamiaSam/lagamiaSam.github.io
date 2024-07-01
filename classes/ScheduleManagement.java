@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class ScheduleManagement {
     private List<Schedule> schedules;
@@ -107,9 +108,17 @@ public class ScheduleManagement {
         String section = scanner.nextLine();
         System.out.println("section: " + section);
 
-        System.out.print("Enter day: ");
-        String day = scanner.nextLine();
-        System.out.println("day: " + day);
+        String day;
+        while (true) {
+            System.out.print("Enter day(s) (comma separated, e.g., Monday, Wednesday, Friday): ");
+            day = scanner.nextLine().trim();
+            if (day.isEmpty() || !areValidDays(day)) {
+                System.out.println("Invalid input. Please enter valid day(s) of the week (e.g., Monday, Tuesday, etc.).");
+            } else {
+                System.out.println("day(s): " + day);
+                break;
+            }
+        }
 
         System.out.print("Enter time: ");
         String time = scanner.nextLine();
@@ -192,9 +201,17 @@ public class ScheduleManagement {
             String newSection = scanner.nextLine();
             System.out.println("new section: " + newSection);
 
-            System.out.print("Enter new day: ");
-            String newDay = scanner.nextLine();
-            System.out.println("new day: " + newDay);
+            String newDay;
+            while (true) {
+                System.out.print("Enter new day(s) (comma separated, e.g., Monday, Wednesday, Friday): ");
+                newDay = scanner.nextLine().trim();
+                if (newDay.isEmpty() || !areValidDays(newDay)) {
+                    System.out.println("Invalid input. Please enter valid day(s) of the week (e.g., Monday, Tuesday, etc.).");
+                } else {
+                    System.out.println("new day(s): " + newDay);
+                    break;
+                }
+            }
 
             System.out.print("Enter new time: ");
             String newTime = scanner.nextLine();
@@ -280,6 +297,17 @@ public class ScheduleManagement {
         int input = scanner.nextInt();
         scanner.nextLine(); // Consume newline left-over
         return input;
+    }
+
+    private boolean areValidDays(String daysInput) {
+        List<String> validDays = Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
+        String[] days = daysInput.split(",");
+        for (String day : days) {
+            if (!validDays.contains(day.trim())) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static void main(String[] args) {

@@ -47,7 +47,7 @@ h2 {
 
 label {
     display: block;
-    margin-bottom: 8px; /* Adjusted spacing between labels and inputs */
+    margin-bottom: 8px; 
     color: #333;
 }
 
@@ -103,5 +103,5 @@ footer {
     background-color: #fff;
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: auto; /* Push footer to bottom */
+    margin-top: auto; 
 }
